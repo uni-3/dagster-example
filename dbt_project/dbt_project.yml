@@ -1,0 +1,8 @@
+name: 'github_analysis'
+version: '1.0'
+config-version: 2
+profile: 'github_analysis'
+
+models:
+  github_analysis:
+    +materialized: view

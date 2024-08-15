@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = []
+
+[tool.dagster]
+module_name = "dagster_project.definitions"
+code_location_name = "dagster_project"
+
+[project]
+name = "dagster-example"
+dynamic = ["version"]
+dependencies = [
+  "airbyte",
+  "dagster",
+  "dagster-dbt",
+  "dagster-duckdb",
+  "dbt",
+  "dbt-duckdb",
+]
+
+

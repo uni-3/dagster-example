@@ -1,0 +1,7 @@
+github_analysis:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      schema: staging
+      path: '../{{ env_var("DUCKDB_DATABASE", "data/staging/data.duckdb") }}'
